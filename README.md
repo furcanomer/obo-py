@@ -1,2 +1,2 @@
 # obo-py
-OBO'nun python ile tekrar yazılmış hali
+OBO'nun Python dili ile tekrar yazılmış hali
