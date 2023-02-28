@@ -1,5 +1,11 @@
 import os
 from getch import getch
+"""
+getch kütüphanesinin kurulumu için
+terminale şunu yazın:
+
+pip install py-getch
+"""
 
 ekran_silme = 0
 
