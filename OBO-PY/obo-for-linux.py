@@ -4,12 +4,12 @@ from getch import getch
 ekran_silme = 0
 
 def ekranTemizle():
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def baslangic():
     ekranTemizle()
 
-    print("OBO PY Edition 0.2 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
+    print("OBO PY Edition 0.3 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
     print("Saga gitmek icin 'D' tusuna basin.\tYeniden baslamak icin 'R' tusuna basin.\n")
     print("Sola gitmek icin 'A' tusuna basin.\tOyunu kapatmak icin 'X' tusuna basin")
     print("--------------------------------------------------------------------------------\n")
