@@ -1,7 +1,15 @@
-# sorunlar
+"""
+sorunlar
 
-# türkçe karakter desteklenmiyor
-# tuşa bastığımız anda oklar ekranda gözükmüyor. sadece sola gidildiğinde görünüyor
+1- Türkçe karakter desteklenmiyor. Mesela Ğ ye basıldığında
+hata oluşuyor. Bu sorunu çözmeye çalışıyorum.
+
+2- Sağ tuşa bastığımız anda oklar ekranda gözükmüyor
+ama sağ tuşa bastıktan sonra sol tuşa bastığımızda
+tüm yaptığımız işlemler ekranda görünüyor. Bu durum
+olmamalıydı. Bunu çözmeye çalışıyorum.
+
+"""
 
 import os
 import getch
