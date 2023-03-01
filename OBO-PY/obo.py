@@ -9,7 +9,7 @@ def ekranTemizle():
 def baslangic():
     ekranTemizle()
 
-    print("OBO PY Edition 1.0 - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
+    print("OBO PY Edition 1.0.1 - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
     print("Saga gitmek icin 'D' tusuna basin.\tYeniden baslamak icin 'R' tusuna basin.\n")
     print("Sola gitmek icin 'A' tusuna basin.\tOyunu kapatmak icin 'X' tusuna basin")
     print("--------------------------------------------------------------------------------\n")
@@ -19,7 +19,7 @@ def yeniden_Baslangic():
     ekran_silme = 1
 
 def birsey_yapma():
-    print("\a", end='')
+    print("\a", end='', flush=True)
 
 baslangic()
 
