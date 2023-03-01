@@ -16,7 +16,7 @@ def baslangic():
     ekranTemizle()
     """
     Eğer dosya konsoldan açıldıysa konsolla alakalı yazıların ekrandan silinmeisini sağlar.
-	Ekranın sadece oyun ile alakalı olmasını istiyorum.
+    Ekranın sadece oyun ile alakalı olmasını istiyorum.
     """
 
     print("OBO PY Edition 1.0.1 - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
