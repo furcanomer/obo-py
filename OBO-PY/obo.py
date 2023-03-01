@@ -84,8 +84,8 @@ while True:
             adim = 0
             """
             Sola gittikten sonra adimi sıfırlıyoruz
-			Sıfırlamazsak sola gitme tuşuna bastığımızda, eski sağ adim sayisi kadar sola gideriz.
-			"""
+	    Sıfırlamazsak sola gitme tuşuna bastığımızda, eski sağ adim sayisi kadar sola gideriz.
+	    """
 
         elif adim == 0: # // sola gitme tuşuna bastık evet ama eğer hiç sağa gitmemişsek...?
             birsey_yapma() # ...o zaman hiçbir şey yapmıyoruz ve sistem uyarı sesi çıkarıp
