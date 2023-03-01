@@ -1,5 +1,10 @@
+# sorunlar
+
+# türkçe karakter desteklenmiyor
+# tuşa bastığımız anda oklar ekranda gözükmüyor. sadece sola gidildiğinde görünüyor
+
 import os
-from getch import getch
+import getch
 
 ekran_silme = 0
 
@@ -9,7 +14,7 @@ def ekranTemizle():
 def baslangic():
     ekranTemizle()
 
-    print("OBO PY Edition 0.3 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
+    print("OBO PY Edition 0.4 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
     print("Saga gitmek icin 'D' tusuna basin.\tYeniden baslamak icin 'R' tusuna basin.\n")
     print("Sola gitmek icin 'A' tusuna basin.\tOyunu kapatmak icin 'X' tusuna basin")
     print("--------------------------------------------------------------------------------\n")
@@ -21,7 +26,6 @@ def yeniden_Baslangic():
 def birsey_yapma():
     print("\a", end='')
 
-
 baslangic()
 
 adim = 0
@@ -32,7 +36,7 @@ while True:
         ekran_silme = 0
         adim = 0
 
-    tus = getch()
+    tus = getch.getch()
 
     if tus == 'd' or tus == 'D':
         
