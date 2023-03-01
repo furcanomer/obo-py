@@ -1,11 +1,5 @@
 import os
 from getch import getch
-"""
-getch kütüphanesinin kurulumu için
-terminale şunu yazın:
-
-pip install py-getch
-"""
 
 ekran_silme = 0
 
@@ -44,7 +38,7 @@ while True:
             adim += 1
 
         else:
-            print("\a")
+            print("\a", end='')
 
     elif tus == 'a' or tus == 'A':
 
@@ -60,7 +54,7 @@ while True:
             adim = 0
 
         elif adim == 0:
-            print("\a")
+            print("\a", end='')
             continue
 
     elif tus == 'x' or tus == 'X':
