@@ -1,10 +1,8 @@
 """
 sorunlar
 
-1- Türkçe karakter desteklenmiyor. Mesela Ğ ye basıldığında
-hata oluşuyor. Bu sorunu çözmeye çalışıyorum.
 
-2- Sağ tuşa bastığımız anda oklar ekranda gözükmüyor
+1- Sağ tuşa bastığımız anda oklar ekranda gözükmüyor
 ama sağ tuşa bastıktan sonra sol tuşa bastığımızda
 tüm yaptığımız işlemler ekranda görünüyor. Bu durum
 olmamalıydı. Bunu çözmeye çalışıyorum.
@@ -12,7 +10,7 @@ olmamalıydı. Bunu çözmeye çalışıyorum.
 """
 
 import os
-import getch
+import readchar
 
 ekran_silme = 0
 
@@ -22,7 +20,7 @@ def ekranTemizle():
 def baslangic():
     ekranTemizle()
 
-    print("OBO PY Edition 0.4 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
+    print("OBO PY Edition 0.5 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
     print("Saga gitmek icin 'D' tusuna basin.\tYeniden baslamak icin 'R' tusuna basin.\n")
     print("Sola gitmek icin 'A' tusuna basin.\tOyunu kapatmak icin 'X' tusuna basin")
     print("--------------------------------------------------------------------------------\n")
@@ -44,7 +42,7 @@ while True:
         ekran_silme = 0
         adim = 0
 
-    tus = getch.getch()
+    tus = readchar.readkey()
 
     if tus == 'd' or tus == 'D':
         
