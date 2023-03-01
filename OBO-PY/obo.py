@@ -5,6 +5,12 @@ ekran_silme = 0
 
 def ekranTemizle():
     os.system('cls' if os.name == 'nt' else 'clear')
+    """
+    ekran temizlemek için 
+    eğer sistem ismi 'nt' (yani windows) ise "cls" kullan
+    eğer sistem ismi 'nt' (yani windows) değilse
+    yani unix benzeri bir sistemse "clear" kullan
+    """
 
 def baslangic():
     ekranTemizle()
@@ -37,6 +43,10 @@ while True:
         
         if adim < 19:
             print("--> ", end='', flush=True)
+            """
+            ekrana "-->" stringini bas ama varsayılan olarak satır atlama
+            yani boş karakter bas ve ekrana ne basacaksan anında bas (flush=True)
+            """
             adim += 1
 
         else:
