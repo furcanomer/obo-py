@@ -1,14 +1,3 @@
-"""
-sorunlar
-
-
-1- Sağ tuşa bastığımız anda oklar ekranda gözükmüyor
-ama sağ tuşa bastıktan sonra sol tuşa bastığımızda
-tüm yaptığımız işlemler ekranda görünüyor. Bu durum
-olmamalıydı. Bunu çözmeye çalışıyorum.
-
-"""
-
 import os
 import readchar
 
@@ -20,7 +9,7 @@ def ekranTemizle():
 def baslangic():
     ekranTemizle()
 
-    print("OBO PY Edition 0.5 Beta - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
+    print("OBO PY Edition 1.0 - https://github.com/furcanomer/obo-py\n--------------------------------------------------------------------------------")
     print("Saga gitmek icin 'D' tusuna basin.\tYeniden baslamak icin 'R' tusuna basin.\n")
     print("Sola gitmek icin 'A' tusuna basin.\tOyunu kapatmak icin 'X' tusuna basin")
     print("--------------------------------------------------------------------------------\n")
@@ -47,7 +36,7 @@ while True:
     if tus == 'd' or tus == 'D':
         
         if adim < 19:
-            print("--> ", end='')
+            print("--> ", end='', flush=True)
             adim += 1
 
         else:
@@ -57,7 +46,7 @@ while True:
 
         if adim > 0:
 
-            print("\n<--", end = '')
+            print("\n<--", end = '', flush=True)
 
             for i in range(adim,1,-1):
                 print(" <--", end='')
